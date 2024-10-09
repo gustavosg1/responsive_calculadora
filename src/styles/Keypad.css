@@ -1,0 +1,81 @@
+/* Keypad.css */
+
+.keypad {
+  justify-content: center;  
+  display: grid;
+  grid-template-columns: repeat(4, 150px); /* Defineix 3 columnes amb ample fix de 150px */             
+  gap: 20px;                               /* Espai entre els botons */      
+
+  
+}
+
+.keypad button {
+  color: black;
+  background: linear-gradient(145deg, #ffffff, #c9c9c9); /* Degradat lleuger per a la il·lusió de profunditat */
+  width: 150px;      /* Largura do botão */
+  height: 50px;      /* Altura do botão */
+  padding: 10px 20px;  /* Espaçamento interno (vertical horizontal) */
+  font-size: 18px;
+  margin: 20px;
+  align-items: center;  
+  margin: 5px; /* Espaçamento externo */
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 1px solid #cbcaca;
+  box-shadow: 4px 4px 10px #555555, -4px -4px 10px #ffffff; /* Ombra a les cantonades */
+  transition: all 0.1s ease-in-out;                     /* Transició suau per al canvi d'estat */
+    
+
+}
+
+.keypad button:hover {
+  background: linear-gradient(145deg, #ffffff, #929292); /* Degradat lleuger per a la il·lusió de profunditat */
+}
+
+
+.keypad button:active {
+  box-shadow: 0 4px #666;         /* Redueix l'ombra quan es clica */
+  transform: translateY(4px);     /* Lleuger desplaçament cap avall */
+}
+
+.keypad .expand {
+  width: 660px;
+  height: 70px;
+}
+
+
+/* Media Query per Mòbils */
+@media (max-width: 800px) {
+  .keypad {
+    grid-template-columns: repeat(4, 120px); /* Defineix 3 columnes amb ample fix de 150px */     
+  }
+
+  .keypad button {
+    width: 100%;                           /* Botons ocupen tota l'amplada */
+    height: 50px;
+    font-size: 16px;                       /* Text més petit */
+  }
+
+  .keypad .expand {
+    width: 540px;                           /* El botó `0` ocupa tota la fila */
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .keypad {
+    grid-template-columns: repeat(4, 80px); /* Defineix 3 columnes amb ample fix de 150px */     
+  }
+
+  .keypad button {
+    width: 80px;                           /* Botons ocupen tota l'amplada */
+    height: 50px;
+    font-size: 16px;                       /* Text més petit */
+  }
+
+  .keypad .expand {
+    width: 380px;                           /* El botó `0` ocupa tota la fila */
+    height: 50px;
+  }
+}

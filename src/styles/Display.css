@@ -1,0 +1,40 @@
+/* Display.css */
+
+.display {
+    justify-content: center;  
+    margin: 0 auto; 
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 15px;
+    color:aqua;
+    width: 650px;      /* Largura do botão */
+    height: 80px;      /* Altura do botão */
+    border: 10px;
+    border-color: black;
+    background-color: white;
+    box-shadow: 4px 4px 10px #555555, -4px -4px 10px #ffffff; /* Ombra a les cantonades */
+    font-size: 60px;
+    text-align: right;
+    color:black;
+    
+
+}
+
+
+
+/* Media Query per Mòbils */
+@media (max-width: 800px) {
+  .display {
+    width: 550px;      /* Amplada més petita per a mòbils */
+    height: 60px;      /* Redueix l'altura del display */
+    font-size: 50px;   /* Redueix la mida de la font per mòbils */
+  }
+}
+
+@media (max-width: 600px) {
+  .display {
+    width: 380px;      /* Amplada més petita per a mòbils */
+    height: 60px;      /* Redueix l'altura del display */
+    font-size: 50px;   /* Redueix la mida de la font per mòbils */
+  }
+}
